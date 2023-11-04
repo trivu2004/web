@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+        }
+        button{
+            margin: 5px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!--     .container>(button*3{$}[onclick="getNum($)"]+button{+}[onclick="getOperator($)"])*4  --> 
+    <div class="container">
+        <button onclick="getNum('1')">1</button
+        ><button onclick="getNum('2')">2</button
+        ><button onclick="getNum('3')">3</button
+        ><button onclick="getOperator('+')">+</button
+        ><button onclick="getNum('4')">4</button
+        ><button onclick="getNum('5')">5</button
+        ><button onclick="getNum('6')">6</button
+        ><button onclick="getOperator('-')">-</button
+        ><button onclick="getNum('7')">7</button
+        ><button onclick="getNum('8')">8</button
+        ><button onclick="getNum('9')">9</button
+        ><button onclick="getOperator('*')">*</button
+        ><button onclick="getNum('0')">0</button
+        ><button onclick="reSet()">C</button><button onclick="compute()">=</button
+        ><button onclick="getOperator('/')">/</button>
+      </div>
+</body>
+<script>
+    var expr = "";
+    function reSet(){
+        expr="";
+    }
+    function getNum(value){
+        expr += value;
+    }
+    function getOperator(value){
+        expr += value;
+    }
+    function compute(){
+        try {
+            alert(eval(expr));
+        } catch (error) {
+            alert(error + "\n Sai!");
+        }
+        reSet();
+    }
+
+
+    /* var num1="", num2="", o="";
+    function reSet(){
+        num1 = num2 = o = "";
+    }
+    function getNum(value){
+        if(num1=="" || o==""){
+            num1+=value;
+        }else{
+            num2+=value;
+        }
+        console.log(num1,num2,o);
+    }
+    function getOperator(value){
+        o = value;
+    }
+    function compute(){
+        switch(o){
+            case '+': 
+            alert(Number(num1)+Number(num2));
+            break;
+            case '-': 
+            alert(Number(num1)-Number(num2));
+            break;
+            case '*':
+            alert(Number(num1)*Number(num2));
+            break;
+            case '/': 
+            alert(Number(num1)/Number(num2));
+            break;
+            default:
+                alert("Nhập lại!");
+        }
+        reSet();
+    }
+    */
+</script>
+</html>

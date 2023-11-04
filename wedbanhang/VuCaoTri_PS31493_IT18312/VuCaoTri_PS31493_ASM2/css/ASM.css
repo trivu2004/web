@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+.container{
+    width: 100%;
+    border: 5px solid gray;
+    height: auto;
+    border-radius: 5px;
+}
+.menu ul li {
+    float: left;
+    margin-left: 63px;
+    list-style: none;
+    font-size: 25px;
+}
+ul{
+    padding: 32px 200px;
+}
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 100px;
+    left: 505px;
+}
+.cart{
+    width: 45px;
+    position: absolute;
+    top: 27px;
+    right: 250px;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    background: black ;
+    margin-bottom: 1px;
+}
+ul li :hover{
+    color: green;
+}
+#banner{
+    width: 100%;
+    position: relative;
+}
+#imgBanner{
+    width: 100%;
+}
+#rightImg{
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 50%; 
+    width: 100px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+#leftImg{
+    cursor: pointer;
+    background-color: yellow;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+}
+#leftImg:hover{
+    background-color: bisque;
+}
+#rightImg:hover{
+    background-color: bisque;
+}
+.footer ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.footer{
+    position: absolute;
+    left: -70px;
+    bottom: -1100px;
+}
+.footer .a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer ul li a{
+    color: white;
+}
+.tuvan ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.tuvan{
+    position: absolute;
+    left: 880px;
+    bottom: -1080px;
+}
+.tuvan .a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tuvan ul li a{
+    color: white;
+}
+
+.dichvu ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.dichvu{
+    position: absolute;
+    left: -70px;
+    bottom: -1250px;
+}
+.dichvu .a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dichvu ul li a{
+    color: white;
+}
+.xe ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.xe{
+    position: absolute;
+    left: 370px;
+    bottom: -1250px;
+}
+.xe .a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.xe ul li a{
+    color: white;
+}
+.Gioithieu ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.Gioithieu{
+    position: absolute;
+    bottom: -1100px;
+    right: 600px;
+}
+.Gioithieu .a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Gioithieu ul li a{
+    color: white;
+}
+.footer1{
+    height: 430px;
+    background-color: black;
+}
+h1{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+.lienhe{
+    position: absolute;
+    color: white;
+    bottom: -1180px;
+    right: 300px;
+    font-size: 20px;
+}
+.icon{
+    position: absolute;
+    bottom: -1150px;
+    right: 60px;
+}
+.footer3{
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    bottom: -1320px;
+    left: 640px;
+}
+.card{
+    background-color: black;
+    border: 2px solid gray;
+    height: 820px;
+}
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    border: 1px solid gray;
+  }
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    left: 580px;
+    position: absolute;
+    bottom: -467px;
+    border: 1px solid gray;
+  }
+  .card3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    right: 10px;
+    position: absolute;
+    bottom: -467px;
+    border: 1px solid gray;
+  }
+  .card4 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    left: 10px;
+    position: absolute;
+    bottom: -900px;
+    border: 1px solid gray;
+  }
+  .card5 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    left: 580px;
+    position: absolute;
+    bottom: -900px;
+    border: 1px solid gray;
+  }
+  .card6 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    right: 10px;
+    position: absolute;
+    bottom: -900px;
+    border: 1px solid gray;
+  }
+  .title {
+    color: white;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }  
+  button:hover, a:hover {
+    opacity: 0.7;
+    color: red;
+  }
+  .card img:hover{  
+    transform: scale(1.1);
+  }

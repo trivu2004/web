@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ten = prompt("Nhập Tên: ")
+        diem = prompt("Nhập Điểm: ");
+        const hocluc = 
+        diem > 10 || diem <0 ? 'Nhập sai'
+        : diem < 10 && diem >=8 ? "Giỏi"
+        : diem < 8 && diem >=6.5 ? 'Khá'
+        : diem >=5 && diem <= 6.5 ? 'tb' : 'yếu'
+        document.write('Ten: '+ten+'<br>' + 'Diem: '+diem+'<br>'+'hocluc: '+hocluc);
+        
+    </script>
+</body>
+</html>

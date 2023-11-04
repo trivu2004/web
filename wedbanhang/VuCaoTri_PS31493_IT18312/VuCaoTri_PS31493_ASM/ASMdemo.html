@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/cart2.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="overlay">
+    <table id="tbCart">
+      <tr>
+        <th>Name</th>
+        <th>image</th>
+        <th>Pirce</th>
+        <th>Qty</th>
+      </tr>
+    </table>
+  </div>
+  <div class="header">
+    <div id="items"></div>
+    <img id="imgIcon" src="img/giohang1.jpg" alt="Cart Icon" onclick="showCarts()" />
+  </div>
+  <div class="prod">
+    <div class="cart">
+      <img src="img/Mercedes1.jpg" alt="" />
+      <h3 class="nine">
+        Mercedes-Benz<span>G63</span><span>380000</span> USD
+      </h3>
+      <button class="button-92">Add Cart</button>
+    </div>
+    <div class="cart">
+      <img src="img/mercedes-amg-couple.png" alt="" />
+      <h3 class="nine">
+        Mercedes-Benz <span>AMG couplé</span><span>120000</span> USD
+      </h3>
+      <button class="button-92">Add Cart</button>
+    </div>
+    <div class="cart">
+      <img src="img/Mercedes2.jpg" alt="" />
+      <h3 class="nine">
+        Mercedes-Benz <span>AMG Sport</span><span>150000</span> USD
+      </h3>
+      <button class="button-92">Add Cart</button>
+    </div>
+    <div class="cart">
+      <img src="img/Mercedes3.jpg" alt="" />
+
+      <h3 class="nine">
+        Mercedes-Benz <span>GLC 250</span><span>200000</span> USD
+      </h3>
+      <button class="button-92">Add Cart</button>
+    </div>
+  </div>
+</body>
+<script src="js/cart.js"></script>
+  <script>
+    function showCarts() {
+      if (cart.length == 0) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Không có gì hết',
+          text: 'Bam nut quay lại !',
+          footer: '<a href="">Why do I have this issue?</a>'
+        })
+      }
+    };
+
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" multiple onchange="uploadFile(this.files)">
+    <div id="massage"></div>
+    <script>
+        let massage = document.getElementById("massage");
+/*         function uploadFile(file){
+            console.log(file[0]);
+            massage.innerText = file[0].name
+        } */
+        function uploadFile(files){
+            for(let i = 0; i < files.length; i++){
+                massage.innerHTML += files[i].name + '<br>'
+            }
+        }
+    </script>
+</body>
+</html>

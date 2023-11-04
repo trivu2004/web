@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Tinh tien mua san pham</h1>
+    <label>So luong:</label>
+    <input type="text" id="soluong">
+    <br>
+    <label>Don gia:</label>
+    <input type="text" id="dongia">
+    <br>
+    <button onclick="tinhtien()">Tinh</button>
+    <hr>
+    <label>Khuyen mai: </label><a id="khuyenmai"></a>
+    <label>Thanh tien: </label><a id="thanhtien"></a>
+</body>
+<script>
+
+    var soluong = document.getElementById('soluong')
+    var dongia = document.getElementById('dongia')
+    var khuyenmai = document.getElementById('khuyenmai')
+    var thanhtien = document.getElementById('thanhtien')
+    function tinhtien() {
+        if (soluong.value < 0 || dongia.value < 0) {
+            alert('Mời nhập lại!')
+        } else {
+            if (soluong.value > 10) {
+                khuyenmai.innerHTML = (soluong.value * dongia.value) * 0.1
+            } else if (soluong.value > 5) {
+                khuyenmai.innerHTML = (soluong.value * dongia.value) * 0.05
+            }
+            thanhtien.innerHTML = dongia.value * soluong.value - khuyenmai.innerHTML
+        }
+
+    }
+
+</script>
+
+</html>

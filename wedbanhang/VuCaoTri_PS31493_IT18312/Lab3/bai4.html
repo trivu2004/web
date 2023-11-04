@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="play(1)">Rock</button>
+        <button onclick="play(2)">Paper</button>
+        <button onclick="play(3)">Scissors</button>
+    </div>
+</body>
+<script>
+    var result = "";
+    function play(value){
+        let rand = 1+Math.floor(Math.random()*3);
+        if(rand == value){
+            alert("Hòa");
+        }else{
+            if(value == 1){
+                result = rand == 2? "You lose" : "You win";
+            }else if(value==2){
+                result = rand == 3 ? "You lose" : "You win";
+            }else{
+                result = rand ==1 ? "You lose" : "You win";
+            }
+        }
+        console.log(rand,value);
+        alert(result);
+    }
+</script>
+</html>

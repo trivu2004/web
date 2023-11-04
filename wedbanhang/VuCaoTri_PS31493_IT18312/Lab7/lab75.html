@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin-top: 5px;
+        }
+
+        .phi_vc {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1>ĐẶT HÀNG</h1>
+        <label>Sản phẩm <input id="san_pham" type="text"></label> <br>
+        <label>Loại <input id="loai" list="Loai" type="text">
+            <datalist id="Loai">
+                <option value="55"></option>
+                <option value="55"></option>
+                <option value="55"></option>
+                <option value="55"></option>
+            </datalist>
+        </label> <br>
+        <label>Đơn giá <input type="text" id="don_gia"></label> <br>
+        <label>Nơi nhận hàng </label><input type="radio" name="dia_chi" onclick="hien_thi(false)"><label>Nội
+            thành</label><input type="radio" name="dia_chi" onclick="hien_thi(true)"><label>Ngoại
+            thành</label> <br>
+        <label id="phi_vc" class="phi_vc">Phí vận chuyển <input type="text" placeholder="100,000,000đ" readonly="true"></label>
+        <hr>
+        <button onclick="kiem_tra()">Đặt mua</button>
+        <script>
+            function hien_thi(visible) {
+                var phi_vc = document.getElementById("phi_vc");
+                phi_vc.style.display = visible ? "block" : "none";
+            }
+            function kiem_tra() {
+                var sp = document.getElementById('san_pham');
+                if (sp.value.length == 0) {
+                    alert('Vui lòng nhập tên sản phẩm!');
+                    return false;
+                }
+                var loai = document.getElementById('loai');
+                if (loai.value.length == 0) {
+                    alert('Vui lòng chọn loại sản phẩm!');
+                    return false;
+                }
+                var gia = document.getElementById('don_gia');
+                if (gia.value.length == 0) {
+                    alert('Vui lòng nhập giá!');
+                    return false;
+                }
+                else if (parseFloat(gia.value) <= 0) {
+                    alert('Vui lòng nhập số dương!');
+                    return false;
+                }
+                var radios = document.getElementsByName('dia_chi');
+                if (!radios[0].checked && !radios[1].checked) {
+                    alert('Vui lòng chọn nơi nhận hàng!');
+                    return false;
+                }
+                alert('Chúc mừng bạn đã nhập đúng');
+                return true;
+            }
+
+        </script>
+    </form>
+
+</body>
+
+</html>

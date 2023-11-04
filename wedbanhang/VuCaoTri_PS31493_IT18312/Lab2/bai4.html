@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const theList = ['Lauren', 'Kevin', true, 35, null, undefined, ['one', 'two']]
+        //xóa phần tử đầu
+        console.log(theList.splice(0, 1));
+        //xóa phần tử cuối
+        console.log(theList.splice(6, 1));
+        //thêm phần tử vào đầu mảng
+        console.log(theList.splice(0, 0, 'FISRT'));
+        //thêm phần tử ở vị trí thứ 4
+        console.log(theList.splice(4,0,'hello world'));
+        //thêm phần tử ở vị trí thứ 3
+        console.log(theList.splice(3,0,'middle'));
+        //thêm phần tử ở vị trí cuối
+        console.log(theList.splice(9,0,'LAST'));
+        console.log(theList);
+
+    </script>
+</body>
+
+</html>

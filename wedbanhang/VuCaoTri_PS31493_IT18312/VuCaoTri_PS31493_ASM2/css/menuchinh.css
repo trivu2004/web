@@ -1,0 +1,193 @@
+
+
+.menu>ul>li{
+    display:inline-block;
+    position: relative;
+}
+.menu>ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    border-radius:3px;
+    background-color:orangered;
+    text-align:center;
+}
+.menu>ul>li>a{
+    text-decoration:none;
+    font-variant:small-caps;
+    font-size:larger;
+    color:white;
+    padding:0 10px;
+    line-height:40px;
+}
+.menu>ul>li>a:hover{
+    color: yellow;
+}
+.menu ul ul{
+    position:absolute;
+    display:none;
+}
+.menu ul ul a{
+    display: block;
+}
+.menu>ul>li:hover>ul{
+    display: block;
+}
+.menu ul ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    border-radius:3px;
+    width:200px;
+    background-color:white;
+    box-shadow:0 0 1px gray;
+}
+.menu ul ul a{
+    line-height:30px;
+    color:orangered;
+    text-decoration:none;
+    font-variant:small-caps;
+    font-size:larger;
+    padding:0 10px;
+
+}
+.menu ul ul a:hover{
+    background-color:orangered;
+    color:white;
+}
+.menu>aside{
+    font-size: 30px;
+    min-height:2000px;
+    width:25%;
+    background-color:lightgray;
+    float:right;
+}
+footer{
+    height: 50px;
+    border-top:5px double orangered;
+    line-height:50px;
+    background-color:lightcyan;
+    text-align:center;
+    font-variant:small-caps;
+    clear:both;
+}
+.column{
+    width: 15%;
+    float:left;
+    height: 200px;
+    position: relative;
+   }
+ 
+   .san-pham{
+   border-radius: 10px;
+   padding:10px;
+   border: 3px solid yellowgreen;
+   margin:5px;
+   text-align: center;
+   width: 160px;
+   height: 160px;
+
+   }
+   .san-pham .ten{
+   font-size:larger;
+   font-variant:small-caps;
+   color: blue;
+   }
+   .san-pham img{
+   max-width:50%;
+   }
+   .san-pham .Gia{
+   color: red;
+   font-weight:bold;
+   font-size:larger;
+   margin-bottom: 10px;
+   }
+   .san-pham .gia del{
+   color:gray;
+   }
+.container{
+    position: relative;
+    width: 100%;
+    height: 100px;
+
+}
+.column a{
+    text-decoration: none;
+}
+
+ul>li>a {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+} 
+ul>li{
+    list-style: none;
+}
+h1{
+    font-size: 30px;
+    margin-left: 350px;
+}
+.tt{
+    position: absolute;
+    width: 100%;
+    height: 900px;
+}
+.kk{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.gg{
+position: absolute;
+bottom: 0px;
+left: 250px;
+}
+.vv{
+position: absolute;
+bottom: 0px;
+right: 900px;
+}
+.hh{
+position: absolute;
+bottom: 0px;
+right: 750px;
+}
+.kk ul li a{
+    font-size: 15px;
+}
+.gg ul li a{
+    font-size: 15px;
+}
+.vv ul li a{
+    font-size: 15px;
+}
+.hh ul li a{
+    font-size: 15px;
+}
+.gt{
+    font-size: 20px;
+    font-weight: bold;
+}
+.hd{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cs{
+    font-size: 20px;
+    font-weight: bold;
+}
+.lh{
+    font-size: 20px;
+    font-weight: bold;
+}
+.t2{
+    position: absolute;
+    right: 200px;
+}
+.t2 a {
+    text-decoration: none;
+}
+.menu ul li img{
+    width: 30px;
+    height: 20px;
+}

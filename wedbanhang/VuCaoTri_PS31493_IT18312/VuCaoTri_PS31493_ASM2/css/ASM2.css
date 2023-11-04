@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+.container{
+    width: 100%;
+    border: 5px solid gray;
+    height: auto;
+    border-radius: 5px;
+}
+.menu ul li {
+    float: left;
+    margin-left: 63px;
+    list-style: none;
+    font-size: 25px;
+}
+ul{
+    padding: 32px 200px;
+}
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.logo{
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}.menu{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    margin-bottom: 1px;
+}
+ul li :hover{
+    color: green;
+}
+#banner{
+    width: 100%;
+    position: relative;
+}
+#imgBanner img{
+    width: 100%;
+}
+#rightImg {
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+#leftImg {   
+    cursor: pointer;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+}
+#leftImg:hover{
+    background-color: bisque;
+}
+#rightImg:hover{
+    background-color: bisque;
+}
+
+
+/* CSS */
+.button-92 {
+    border-radius: 5px;
+    --c: #f5d94c;
+    /* text color */
+    background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #1e1e00;
+    /* background color */
+    color: #0000;
+    border: none;
+    transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+    text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+      calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+    outline-offset: .1em;
+    transition: 0.3s;
+  }
+  
+  .button-92:hover,
+  .button-92:focus-visible {
+    --_p: 0%;
+    --_i: 1;
+  }
+  
+  .button-92:active {
+    text-shadow: none;
+    color: var(--c);
+    box-shadow: inset 0 0 9e9q #0005;
+    transition: 0s;
+  }
+  
+  .button-92 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: auto;
+    cursor: pointer;
+    padding: .1em .3em;
+  }
+  .footer ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.footer{
+    position: absolute;
+    left: -70px;
+    top: 1680px;
+}
+.footer .a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer ul li a{
+    color: white;
+}
+.tuvan ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.tuvan{
+    position: absolute;
+    left: 880px;
+    bottom: -930px;
+}
+.tuvan .a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tuvan ul li a{
+    color: white;
+}
+
+.dichvu ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.dichvu{
+    position: absolute;
+    left: -70px;
+    bottom: -1150px;
+}
+.dichvu .a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dichvu ul li a{
+    color: white;
+}
+.xe ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.xe{
+    position: absolute;
+    left: 370px;
+    bottom: -1150px;
+}
+.xe .a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.xe ul li a{
+    color: white;
+}
+.Gioithieu ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.Gioithieu{
+    position: absolute;
+    bottom: -960px;
+    right: 600px;
+}
+.Gioithieu .a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Gioithieu ul li a{
+    color: white;
+}
+.footer1{
+    height: 500px;
+    background-color: black;
+}
+h1{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+.lienhe{
+    position: absolute;
+    color: white;
+    bottom: -1080px;
+    right: 270px;
+    font-size: 20px;
+}
+.icon img{
+    position: absolute;
+    right: 60px;
+
+}
+.footer3{
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    bottom: -1180px;
+    left: 640px;
+}
+.hinh{
+    position: absolute;
+    width: 50px;
+    float: right;
+    right: 80px;
+    top: 1850px;
+}
+.first{
+    text-align: center;
+}
+.first button{
+    margin-left: 50px;
+    width: 100px;
+    height:30px;
+    background-color: grey;
+    color: rgb(255, 183, 0);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first button:hover{
+    background-color: aqua;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cart img:hover{  
+    transform: scale(1.1);
+  }
+.cart :hover{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

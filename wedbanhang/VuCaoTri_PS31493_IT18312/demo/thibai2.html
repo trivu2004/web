@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Ho ten</label>
+    <input type="text" id="ten">
+    <br>
+    <label for="">Ngay sinh</label>
+    <input type="date" name="" id="ngaysinh">
+    <br>
+    <label for="">Gioi tinh</label>
+    <input type="radio" name="" id="nam">
+    <label for="">Nam</label>
+    <input type="radio" name="" id="nu">
+    <label for="">Nu</label>
+    <br>
+    <label>Chuc vu <input id="loai" list="Loai" type="text" onchange="check()">
+        <datalist id="Loai">
+            <option value="Giam doc"></option>
+            <option value="Truong phong"></option>
+            <option value="Nhan vien"></option>
+        </datalist>
+    </label>
+    <br>
+    <label for="">Luong</label>
+    <input type="text" id="luong">
+    <br>
+    <button onclick="chapNhan()">Chap nhan</button>
+    <button onclick="xoa()">Nhap lai</button>
+</body>
+<script>
+    function chapNhan() {
+        var ten = document.getElementById('ten').value
+        var ngaysinh = document.getElementById('ngaysinh').value
+        var nam = document.getElementById('nam').value
+        var nu = document.getElementById('nu').value
+        var chucvu = document.getElementById('loai').value
+        if (ten == "") {
+            alert("Hay nhap ten!")
+        } else if (ngaysinh == "") {
+            alert("Hay nhap ngay sinh!")
+        } else if (nam == '' || nu == '') {
+            alert("Hay chon gioi tinh!")
+        } else if (chucvu == "") {
+            alert("Hay chon chuc vu!")
+        } else {
+            alert('Form đã hoàn thành')
+        }
+    }
+    function check() {
+        var luong = document.getElementById('luong')
+        var chucvu = document.getElementById('loai')
+        if (chucvu.value == 'Giam doc') {
+            luong.value = '20000000'
+        } else if (chucvu.value == 'Truong phong') {
+            luong.value = '15000000'
+        } else if (chucvu.value == 'Nhan vien') {
+            luong.value = '10000000'
+        }
+    }
+    function xoa(){
+        location.reload();
+    }
+</script>
+
+</html>

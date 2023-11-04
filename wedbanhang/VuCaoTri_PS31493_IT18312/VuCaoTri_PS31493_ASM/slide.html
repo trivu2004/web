@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #banner{
+        width: 100%;
+        position: relative;
+    }
+    #imgBanner{
+        width: 100%;
+    }
+    #rightImg{
+        width: 100px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+    }
+    #leftImg{
+        width: 100px;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+    }
+</style>
+<body>
+    <div id="banner">
+        <img onclick="rightNext()" id="rightImg" src="img/rightArrow.png" alt="">
+        <img onclick="leftPrev()" id="leftImg"  src="img/leftArrow.png" alt="">
+        <img id="imgBanner" src="img/Mercedes0.jpg" alt="">
+        <button onclick="rightNext">First</button>
+        <button onclick="leftPrev">Left</button>
+    </div>
+
+</body>
+<script>
+    var i = 0;
+    var imgArr = Array();
+    // imgArr[0] = "img/Mercedes0.jpg";
+    // imgArr[1] = "img/Mercedes1.jpg";
+    // imgArr[2] = "img/Mercedes2.jpg";
+    // imgArr[3] = "img/Mercedes3.jpg";
+    // imgArr[4] = "img/Mercedes4.jpg";
+
+    for(let i = 0;i<5;i++){
+        imgArr[i] = "img/Mercedes"+i+".jpg";
+    }
+    function changeImg(){
+        document.getElementById("imgBanner").src=imgArr[i];
+        if(i < imgArr.length -1){
+            i++;
+        }else{
+            i = 0;
+        }
+        setTimeout("changeImg()",5000);
+    }
+    window.onload = changeImg;
+ 
+    function rightNext(){
+        i++;
+        if(i>imgArr.length-1){
+            i = 0;  
+        }
+        document.getElementById("imgBanner").src = imgArr[i];
+    }
+    function leftPrev(){
+        i--;
+        if(i<0){
+            i = imgArr.length - 1;
+        }
+        document.getElementById("imgBanner").src = imgArr[i];
+    }
+</script>
+</html>

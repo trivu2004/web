@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Danh sach san pham</h1>
+    <label for="">Ten</label>
+    <label for="">Gia</label>
+    <label for="">So luong</label>
+    <label for="">Thanh tien</label>
+    <br>
+    <label for="">Iphone 12</label>
+    <label for="" id="gia1">1000</label>
+    <label for=""><input type="text" id="soluong1" onblur="show1()"></label>
+    <label for="" id="thanhtien1"></label>
+    <br>
+    <label for="">Iphone 13</label>
+    <label for="" id="gia2">1200</label>
+    <label for=""><input type="text" id="soluong2" onblur="show2()"></label>
+    <label for="" id="thanhtien2"></label>
+    <br>
+    <label for="">Iphone 14</label>
+    <label for="" id="gia3">1500</label>
+    <label for=""><input type="text" id="soluong3" onblur="show3()"></label>
+    <label for="" id="thanhtien3"></label>
+    <hr>
+    <label for="" onmouseover="tongtien()">Tong tien</label>
+    <label id="tongtien"></label>
+</body>
+<script>
+    var soluong1 = document.getElementById("soluong1");
+    var soluong2 = document.getElementById("soluong2");
+    var soluong3 = document.getElementById("soluong3")
+    var gia1 = document.getElementById("gia1");
+    var gia2 = document.getElementById("gia2");
+    var gia3 = document.getElementById("gia3");
+    var thanhtien1 = document.getElementById("thanhtien1");
+    var thanhtien2 = document.getElementById("thanhtien2")
+    var thanhtien3 = document.getElementById("thanhtien3")
+    var tongTien = document.getElementById("tongtien");
+    function show1() {
+        thanhtien1.innerHTML = soluong1.value * gia1.innerHTML
+    }
+    function show2() {
+        thanhtien2.innerHTML = soluong2.value * gia2.innerHTML
+    }
+    function show3() {
+        thanhtien3.innerHTML = soluong3.value * gia3.innerHTML
+    }
+    function tongtien(){
+        tongTien.innerHTML = Number(thanhtien1.innerHTML) + Number(thanhtien2.innerHTML) + Number(thanhtien3.innerHTML)
+        console.log(tongTien);
+    }
+</script>
+
+</html>

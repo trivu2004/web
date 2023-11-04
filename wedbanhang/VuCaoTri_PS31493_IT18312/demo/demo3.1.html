@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="myclass">This is the first div</div>
+    <div class="myclass">This is the second div</div>
+    <div class="myID">This is the third div</div>
+    <div class="myID">This is the fourth div</div>
+    <div class="myclass">This is the div</div>
+    <p>This is First P</p>
+    <script>
+        var tag = document.getElementsByClassName("myclass")
+        var tagID = document.getElementById("myID")
+        var tagname =  document.querySelector("p.myclass")
+        tag[1].innerText = "<h1> This is the first div </h1>"
+        
+        console.log(tag[1].innerHTML);
+        console.log(tag[1].innerText);
+        console.log(tag[0].textContent);
+        
+        tag[0].onclick =() => {
+            tag[1].style.color = "green";
+        };
+        tag[1].onclick =() => {
+            tag[2].style.color = "green";
+        };
+        tag[2].onclick =() => {
+            tag[0].style.color = "green";
+        };
+    </script> -->
+    <div class="myclass">This is String</div>
+    </body>
+    <script>
+        var newNod = document.createElement("h1");
+        newNod.innerText = "This is h1"
+        document.body.appendChild(newNod);
+        // document.body.removeChild(newNod);
+    </script>
+</html>

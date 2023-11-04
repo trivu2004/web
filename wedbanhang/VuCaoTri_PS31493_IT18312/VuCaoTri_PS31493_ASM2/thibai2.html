@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        img:nth-child(1){
+            display: none;
+        }
+        img:nth-child(2){
+            display: none;
+        }
+        img:nth-child(3){
+            display: none;
+        }
+        #thumnail{
+            width: 20%;
+            height: 20%;
+        }
+    </style>
+</head>
+<body>
+
+        <img src="img/s22-ultra-den.jpg" id="img1">
+        <img src="img/s23-ultra-xanh.webp" id="img2">
+        <img src="img/xiaomi.jpg" id="img3">
+
+        <!-- thumnail -->
+        <img src="img/s22-ultra-den.jpg" id="thumnail" onclick="show1()">
+        <img src="img/s23-ultra-xanh.webp" id="thumnail" onclick="show2()">
+        <img src="img/xiaomi.jpg" id="thumnail" onclick="show3()">
+
+</body>
+<script>
+    var img1 = document.getElementById("img1");
+    var img2 = document.getElementById("img2");
+    var img3 = document.getElementById("img3");
+    function show1(){
+        if(img1.style.display=='block'){
+            img1.style.display='none';
+        }else{
+            img1.style.display='block';
+        }
+    }
+
+    function show2(){
+        if(img2.style.display=='block'){
+            img2.style.display='none';
+        }else{
+            img2.style.display='block';
+        }
+    }
+
+    function show3(){
+        if(img3.style.display=='block'){
+            img3.style.display='none';
+        }else{
+            img3.style.display='block';
+        }
+    }
+</script>
+</html>

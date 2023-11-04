@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <div>
+            <label for="">họ tên</label> <br>
+            <input id="hoTen" type="text" placeholder="Họ tên">
+        </div>
+
+        <div>
+            <label for="">điểm toán</label> <br>
+            <input id="toan" type="number" placeholder="toán" value="">
+        </div>
+
+        <div>
+            <label for="">điểm văn</label> <br>
+            <input id="li" type="number" placeholder="li" value="">
+        </div>
+
+        <div>
+            <label for="">điểm tiếng anh</label> <br>
+            <input id="van" type="number" placeholder="văn" value="">
+        </div>
+
+        <input type="button" onclick="add()">
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>tên</th>
+            <th>điểm toán</th>
+            <th>điểm tiếng anh</th>
+            <th>điểm văn</th>
+            <th>điểm trung bình</th>
+        </tr>
+        <tbody id="show">
+
+        </tbody>
+    </table>
+
+    <script>
+
+        var data = [];
+        function add() {
+            var hoTen = document.getElementById("hoTen").value;
+            var toan = parseFloat(document.getElementById("toan").value);
+            var li = parseFloat(document.getElementById("li").value);
+            var van = parseFloat(document.getElementById("van").value);
+
+            var item = {
+                hoTen: hoTen,
+                toan: toan,
+                li: li,
+                van: van
+            }
+            
+            data.push(item);
+
+            render();
+        }
+
+        function render() {
+            table = "";
+
+            for (let i = 0; i < data.length; i++) {
+                table += `
+                    <tr>
+                        <th>${data[i].hoTen}</th>
+                        <th>${data[i].toan}</th>
+                        <th>${data[i].li}</th>
+                        <th>${data[i].van}</th>
+                        <th>${parseFloat((data[i].toan + data[i].li + data[i].van) / 3)}</th>
+                    </tr>
+                `
+            }
+
+            document.getElementById("show").innerHTML = table;
+        }
+
+    </script>
+    
+</body>
+</html>

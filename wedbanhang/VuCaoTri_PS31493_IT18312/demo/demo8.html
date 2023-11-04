@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    <div id="sh"></div>
+    <form id="myfr" name="fr">
+        <input type="text" name="fname" placeholder="First Name" onkeydown="chg()">
+        <input type="text" name="lname" placeholder="Last Name" onkeypress="blr()"> 
+        <input type="button" onclick="showText()" value="Submit">
+    </form>
+</body>
+<script>
+    // var myfr = document.getElementById("myfr")
+    // var myfr = document.forms["myfr"] nếu k có name = "fr"
+    // var myfr = document.forms.fr;
+    // var sh = document.getElementById("sh")
+
+
+
+    function chg(){
+        document.getElementById("sh").innerHTML=myfr.fname.value;
+    }
+    function blr(){
+        document.getElementById("sh").innerHTML=myfr.lname.value;
+    }
+
+
+    function showText(){
+        // sh.innerText = myfr["fname"].value +" " + myfr["lname"].value;
+        var myfr = event.target.parentElement;
+        console.log(myfr);
+        console.log(event.target.previousSibling.previousSibling);
+        let string = myfr.fname.value + " " + myfr.lname.value;
+        document.getElementById("sh").innerHTML = string;
+    }
+</script>
+</html>

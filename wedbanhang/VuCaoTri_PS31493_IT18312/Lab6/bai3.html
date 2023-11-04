@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 500px;
+        left: 100px;
+        position: absolute;
+    }
+    button{
+        width: 100px;
+        margin-top: 650px;
+    }
+</style>
+<body>
+    <img onmouseover="fover()" onmouseout="fout()" id="anh" src="camry.png" alt="">
+    <script>
+         var out = new Image();
+        out.src = "camry.png";
+         var over = new Image();
+         over.src = "fortuner.png"
+         function fover(){
+            var anh = document.getElementById("anh");
+            anh.src = over.src;
+         }
+         function fout(){
+            var anh = document.getElementById("anh");
+            anh.src = out.src;
+         }
+         
+    </script>
+</body>
+</html>

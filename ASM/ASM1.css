@@ -1,0 +1,152 @@
+body {
+    margin: 2px;
+    padding: 2px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 3px auto;
+}
+
+.container>header {
+    height: 200px;
+    background-color: blue;
+    margin-bottom: 5px;
+}
+
+.container>header>img {
+    width: 100%;
+    height: 100%;
+}
+
+.container>nav {
+    height: 30px;
+    background-color: red;
+    margin-bottom: 5px;
+    font-size: larger;
+}
+
+nav>ul>li {
+    display: inline-block;
+}
+
+nav>ul>li>a {
+    display: block;
+}
+nav>ul>li>a:hover{
+    text-decoration: underline;
+}
+.menu>ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    background-color: orangered;
+    text-align: center;
+}
+
+.menu>ul>li {
+    position: relative;
+}
+
+.menu ul ul {
+    position: absolute;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    width: 200px;
+    background-color: yellowgreen;
+    box-shadow: 0 0 1px gray;
+}
+
+.menu ul ul a {
+    display: block;
+    line-height: 30px;
+    color: orangered;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.menu ul ul a:hover {
+    background-color: orangered;
+    color: white;
+    text-decoration: underline;
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    line-height: 30px;
+}
+
+.menu>ul>li>a:hover {
+    color:red;
+}
+
+.menu>ul>li:hover>ul {
+    display: block;
+}
+
+.container>main>aside {
+    height: 400px;
+    width: 24%;
+    background-color: white;
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+aside .vmenu {
+    padding: 0px;
+    margin: 5px;
+    list-style: none;
+    border-radius: 3px;
+    box-shadow: 0 0 10px chocolate;
+}
+
+aside .vmenu a {
+    display: block;
+    border-bottom: 1px dotted orangered;
+    color: orangered;
+    font-size: larger;
+    text-decoration: none;
+    padding: 8px 5px 8px 30px;
+}
+
+aside .vmenu a:hover {
+    border-bottom: 1px dotted white;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+.container>main>article {
+    height: 400px;
+    width: 75%;
+    background-color: white;
+    float: left;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px chocolate;
+}
+article .size{
+    text-align: center;
+} 
+article p{
+    text-align: justify
+}
+.container>footer {
+    clear: both;
+    height: 50px;
+    border-top: 5px double orange;
+    width: 100%;
+    height: 50px;
+    background-color: greenyellow;
+    line-height: 50px;
+    text-align: center;
+    font-size: larger;
+}

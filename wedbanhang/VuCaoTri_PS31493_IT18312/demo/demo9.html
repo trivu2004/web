@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="welcom">Hi there</div>
+    <form>
+        <input type="checkbox" name="test" value="how">How
+        <input type="checkbox" name="test" value="are">are
+        <input type="checkbox" name="test" value="you">you
+        <input type="checkbox" name="test" value="?">?
+        <input type="button" onclick="CheckedTest()" value="Click me!">
+    </form>
+</body>
+    <script>
+        var chk = document.getElementsByName("test");
+        var str = "";
+        function  CheckedTest(){
+            chk.forEach((e)=> {
+                if(e.checked) str+= " " + e.value;
+            });
+            alert(str);
+
+
+    
+
+
+            // for(let i = 0; i<chk.length;i++){
+            //     if(chk[i].checked) str = str + " " + chk[i].value;
+            // }
+            // alert(str);
+            // str ="";
+        }
+
+    </script>
+</html>

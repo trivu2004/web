@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="shape" id="square" style="width: 100px; height: 100px; background-color: grey;">click for magic</div> -->
+    <!-- <p class="unique">Click here for magic!</p> -->
+    <div id="divvy" onmouseover="changerColor()" style="width: 100px; height: 100px; background-color: pink;"></div>
+    <!-- <img onmouseover="fover()" onmouseout="fout()" id="anh" src="Mercedes.png" alt=""> -->
+</body>
+<script>
+    // window.onload = function(){
+    //     document.getElementById("square").addEventListener("click", changerColor);
+    //     document.getElementById("square").addEventListener("click", unique);
+    // }
+    // function changerColor(){
+    //     window.alert("Hello");
+    //     let red = Math.floor(Math.random()*256);
+    //     let green = Math.floor(Math.random()*256);
+    //     let blue = Math.floor(Math.random()*256);
+    //     this.style.backgroundColor = 'grb(${red},$(green),$(blue))';
+    // }
+    // var out = new Image();
+    // out.src ="Mercedes.png";
+    // var over = new Image();
+    // over.src = "mercedes_PNG1861.png";
+
+    // function fover(){
+    //     var anh = document.getElementById("anh");
+    //     anh.src = over.src;
+    // }
+    // function fout(){
+    //     var anh = document.getElementById("anh");
+    //     anh.src = out.src;
+    // }
+
+    function changerColor(){
+        document.getElementById("divvy").style.backgroundColor = "blue";
+    }
+</script>
+</html>

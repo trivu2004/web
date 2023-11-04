@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Michroma',sans-serif;
+}
+
+html{
+    font-size: 10px;
+    background: white;
+    color: #FFC700;
+}
+main{
+    max-width: 50rem;
+    margin: 2rem auto;
+    background: linear-gradient(45deg, #003A90, #0d469c);
+    padding: 3rem 1.5rem 6rem 1.5rem;
+    border-radius: 7rem;
+    box-shadow: 0 5px 5px yellowgreen;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding-bottom: 3rem;
+}
+section{
+    background: #1c509e;
+    font-size: 1.34rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+    border-radius: 7rem;
+    box-shadow: inset 1px -1px rgb(0, 0, 0);
+}

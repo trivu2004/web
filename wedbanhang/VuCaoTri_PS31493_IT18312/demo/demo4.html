@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const motobike = {
+            wheel : 2,
+            move : function(){ 
+                return "Engine"
+            },
+            fuel: "Gasoline", 
+        };
+        const bike = {
+            wheel : 2, 
+            move : function(){
+                return "cycling"
+            },
+            fuel: "human power",
+        }
+        const car = {
+            wheel : 4,
+            move : function(){  
+                return "Engine"
+            },
+            fuel: "Hydro gas",
+        };
+        console.log(motobike.wheel);
+        motobike.wheel = 3;
+        document.write(motobike.wheel);
+
+        function vehicle(name, wheel, fuel, move){
+            this.name = name;
+            this.wheel = wheel;
+            this.fuel = fule;
+            this.move = move;
+        }
+        var mer = new vehicle("Mercedes",4,"Hydro","Engine");
+        console.log(mer);
+        document.write(JSON.stringify(mer));
+    </script>
+</body>
+</html>
